@@ -5,7 +5,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
-import java.util.Scanner;
 import java.util.UUID;
 
 public class dbasTestCases extends InterruptedException {
@@ -24,7 +23,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -183,7 +182,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
 
         WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
@@ -235,7 +234,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
 
         WebElement password = driver.findElement(By.id("password"));
@@ -312,7 +311,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -384,7 +383,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -430,7 +429,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -479,7 +478,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -520,7 +519,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -564,7 +563,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -605,7 +604,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -835,7 +834,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -908,7 +907,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -1006,7 +1005,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -1116,7 +1115,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -1219,7 +1218,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -1262,7 +1261,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -1318,7 +1317,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -1379,7 +1378,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -1439,7 +1438,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -1503,7 +1502,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -1517,7 +1516,7 @@ public class dbasTestCases extends InterruptedException {
 
         WebElement usrName = driver.findElement(By.id("username"));
         usrName.click();
-        usrName.sendKeys("administrator");
+        usrName.sendKeys("ankur1234");
         Thread.sleep(1000);
         WebElement pasword = driver.findElement(By.id("password"));
         pasword.click();
@@ -1558,7 +1557,7 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -1616,7 +1615,101 @@ public class dbasTestCases extends InterruptedException {
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("administrator");
+        userName.sendKeys("ankur1234");
+        Thread.sleep(2000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(2000);
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        WebElement userManagement = driver.findElement(By.xpath("//a[contains(text(),'User Managment')]"));
+        userManagement.click();
+
+
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+
+
+        List<WebElement> deleteBtn = driver.findElements(By.xpath("//a[@class='btn']"));
+        int count = deleteBtn.size();
+        deleteBtn.get(count-1).click();
+        Thread.sleep(2000);
+
+        driver.findElement(By.linkText("Yes")).click();
+
+        Thread.sleep(1000);
+
+        WebElement userDeletText = driver.findElement(By.xpath("//*[contains(text(),'User Deleted Successfully')]"));
+        String userDeleteText =userDeletText.getText();
+        Assert.assertEquals(userDeleteText,"User Deleted Successfully","Assertion :User Not Deleted Successfully");
+        System.out.println("Assertion : User Deleted Successfully");
+
+        Thread.sleep(2000);
+        driver.close();
+
+    }           // Admin should be able to delete other users record
+
+
+    @Test
+    public void userManagement9() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : User Management");
+        System.out.println("Test Description : User logout from ther main menu");
+        System.out.println("Expected Result : When user clicks on Logout button then he should be logged out.");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(2000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(2000);
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        WebElement logoutBtn = driver.findElement(By.xpath("//*[contains(text(),'Logout')]"));
+        logoutBtn.click();
+        Thread.sleep(2000);
+
+        WebElement signinBtn = driver.findElement(By.id("login"));
+        String copySignInText = signinBtn.getText();
+
+        Assert.assertEquals(copySignInText,"Sign In","Assertion - Didn't Logout Successfully");
+        System.out.println("Assertion - Logout Successfully");
+
+        driver.close();
+
+    }           // User should be able to logout from the main menu
+
+
+    @Test
+    public void userManagement10() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : User Management");
+        System.out.println("Test Description : Admin clicks on Edit button of any user");
+        System.out.println("Expected Result : All the details will be auto inserted after the edit button clicked.");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
@@ -1634,32 +1727,845 @@ public class dbasTestCases extends InterruptedException {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("javascript:window.scrollBy(250,350)");
 
-        WebElement userDeleteBtn = driver.findElement(By.xpath("//a[@class='btn']"));
-        userDeleteBtn.click();
+        WebElement userEditBtn = driver.findElement(By.xpath("//tbody/tr[2][@style='font-weight:100;']/td/a[@id='btnEdit']"));
+        userEditBtn.click();
+
+        Thread.sleep(3000);
+        driver.close();
+
+    }           // After clicking on Edit button of any user , details should autofill in the fields
+
+
+    @Test
+    public void userManagement11() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : User Management");
+        System.out.println("Test Description : Admin get into the User Management Page and he can see list of users registered");
+        System.out.println("Expected Result : Admin can see all the user list inside User Management Page");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(2000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(2000);
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        WebElement userManagement = driver.findElement(By.xpath("//a[contains(text(),'User Managment')]"));
+        userManagement.click();
+
+
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("javascript:window.scrollBy(250,350)");
+
+        Thread.sleep(3000);
+        driver.close();
+
+    }           // Admin can view all the registered users on User Management Page
+
+
+
+    // --------------------------------- Aggregate Db Report Cases -------------------------------- //
+
+
+    @Test
+    public void aggregateDbReport1() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : Aggregate Db Report");
+        System.out.println("Test Description : User should be able to see the correct count of database items on aggregated db report page");
+        System.out.println("Expected Result : Count of databases and individuals in the list should be same");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(2000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(2000);
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        Select selectClientFromDropDown = new Select(driver.findElement(By.xpath("//select[@name='client']")));
+        selectClientFromDropDown.selectByVisibleText("Hanzala");
         Thread.sleep(1000);
 
-       List<WebElement> deleteBtn = driver.findElements(By.xpath("//a[@class='btn']"));
-       int count = deleteBtn.size();
-       deleteBtn.get(count-1).click();
-
-       driver.findElement(By.xpath("//a[contains(text(),'Yes')]")).click();         // clicking yes button on alert
-
+        WebElement selectClientBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectClientBtn.click();
         Thread.sleep(1000);
 
-        WebElement userDeleteText = driver.findElement(By.xpath("//*[contains(text(),'User Deleted Successfully')]"));
-        Assert.assertEquals(userDeleteText,"User Deleted Successfully","Assertion :User Not Deleted Successfully");
-        System.out.println("Assertion : User Deleted Successfully");
+        Select selectProjectFromDropDown = new Select(driver.findElement(By.name("project")));
+        selectProjectFromDropDown.selectByVisibleText("H1");
+        Thread.sleep(2000);
+
+        WebElement selectProjectBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectProjectBtn.click();
+        Thread.sleep(1000);
+
+        List<WebElement> dbRecords = driver.findElements(By.xpath("//table[@class='table table-striped']/tbody/tr"));
+        int countOfDbRecordOnProjectScreen = dbRecords.size();
+        String countOfRecordsOnProjectScreen = String.valueOf(countOfDbRecordOnProjectScreen);
+
+        WebElement viewAggregateReport = driver.findElement(By.xpath("//*[contains(text(),'View Aggregated')]"));
+        viewAggregateReport.click();
+        Thread.sleep(3000);
+
+        WebElement numberOfDatabasesCount = driver.findElement(By.xpath("//div[@class='row'][3]/div[@class='col'][2]/h5"));
+        String countOfNumberOfDatabases = numberOfDatabasesCount.getText();
+
+        Assert.assertEquals(countOfNumberOfDatabases,countOfRecordsOnProjectScreen,"Assertion : Count are not same, Count of Project Screen : "+countOfRecordsOnProjectScreen+ " and Count of Number of Databases in Aggregate View : "+countOfNumberOfDatabases);
+        System.out.println("Assertion : Counts are same,  Count of Project Screen : "+countOfRecordsOnProjectScreen+ " and Count of Number of Databases in Aggregate View : " +countOfNumberOfDatabases);
+
+        Thread.sleep(1000);
+        driver.close();
+
+    }           // Count of DB records in Project Screen and No of DB's in Aggregate View should be same
+
+
+    @Test
+    public void aggregateDbReport2() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : Aggregate Db Report");
+        System.out.println("Test Description : User after selecting client and project and Aggregate view,should not see the graph if the count is 0");
+        System.out.println("Expected Result : User should not see the graph if the count is 0");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        Select selectClientFromDropDown = new Select(driver.findElement(By.xpath("//select[@name='client']")));
+        selectClientFromDropDown.selectByVisibleText("Hanzala");
+        Thread.sleep(1000);
+
+        WebElement selectClientBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectClientBtn.click();
+        Thread.sleep(1000);
+
+        Select selectProjectFromDropDown = new Select(driver.findElement(By.name("project")));
+        selectProjectFromDropDown.selectByVisibleText("H12");
+        Thread.sleep(2000);
+
+        WebElement selectProjectBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectProjectBtn.click();
+        Thread.sleep(1000);
+
+        List<WebElement> dbRecords = driver.findElements(By.xpath("//table[@class='table table-striped']/tbody/tr"));
+        int countOfDbRecordOnProjectScreen = dbRecords.size();
+        String countOfRecordsOnProjectScreen = String.valueOf(countOfDbRecordOnProjectScreen);
+
+        WebElement viewAggregateReport = driver.findElement(By.xpath("//*[contains(text(),'View Aggregated')]"));
+        viewAggregateReport.click();
+        Thread.sleep(2000);
+
+        WebElement failingAcessReportText = driver.findElement(By.xpath("//*[contains(text(),'Make a DB Connection')]"));
+        String failingAccessReportText = failingAcessReportText.getText();
+
+        if(countOfDbRecordOnProjectScreen == 0 && failingAccessReportText.equals("Make a DB Connection before accessing Report.")) {
+            System.out.println("Assertion : Count is "+countOfDbRecordOnProjectScreen+ " and Error on Clicking View Aggregate Report : "+failingAccessReportText);
+        }
+        else {
+            System.out.println("Assertion : Count is not 0 and neither its getting error on clicking View Aggregate Report");
+        }
+
+        Thread.sleep(1000);
+        driver.close();
+
+    }           // User should not see the graph if the count is 0
+
+
+    @Test
+    public void aggregateDbReport3() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : Aggregate Db Report");
+        System.out.println("Test Description : User after selecting client and project and Aggregate view,should not see the graph if the count is 0");
+        System.out.println("Expected Result : User should not see the graph if the count is 0");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        Select selectClientFromDropDown = new Select(driver.findElement(By.xpath("//select[@name='client']")));
+        selectClientFromDropDown.selectByVisibleText("Hanzala");
+        Thread.sleep(1000);
+
+        WebElement selectClientBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectClientBtn.click();
+        Thread.sleep(1000);
+
+        Select selectProjectFromDropDown = new Select(driver.findElement(By.name("project")));
+        selectProjectFromDropDown.selectByVisibleText("H12");
+        Thread.sleep(2000);
+
+        WebElement selectProjectBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectProjectBtn.click();
+        Thread.sleep(1000);
+
+        List<WebElement> dbRecords = driver.findElements(By.xpath("//table[@class='table table-striped']/tbody/tr"));
+        int countOfDbRecordOnProjectScreen = dbRecords.size();
+        String countOfRecordsOnProjectScreen = String.valueOf(countOfDbRecordOnProjectScreen);
+
+        WebElement viewAggregateReport = driver.findElement(By.xpath("//*[contains(text(),'View Aggregated')]"));
+        viewAggregateReport.click();
+        Thread.sleep(2000);
+
+        WebElement failingAcessReportText = driver.findElement(By.xpath("//*[contains(text(),'Make a DB Connection')]"));
+        String failingAccessReportText = failingAcessReportText.getText();
+
+        if(countOfDbRecordOnProjectScreen == 0 && failingAccessReportText.equals("Make a DB Connection before accessing Report.")) {
+            System.out.println("Assertion : Count is "+countOfDbRecordOnProjectScreen+ " and Error on Clicking View Aggregate Report : "+failingAccessReportText);
+        }
+        else {
+            System.out.println("Assertion : Count is not 0 and neither its getting error on clicking View Aggregate Report");
+        }
+
+        Thread.sleep(1000);
+        driver.close();
+
+    }           // Reports under Aggregate view should be matching with individual reports
+
+
+    @Test
+    public void aggregateDbReport4() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : Aggregate Db Report");
+        System.out.println("Test Description : User after selecting client and project and Aggregate view,should see the graph if there are some records");
+        System.out.println("Expected Result : User should see the graph if the records is more than 0");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        Select selectClientFromDropDown = new Select(driver.findElement(By.xpath("//select[@name='client']")));
+        selectClientFromDropDown.selectByVisibleText("Hanzala");
+        Thread.sleep(1000);
+
+        WebElement selectClientBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectClientBtn.click();
+        Thread.sleep(1000);
+
+        Select selectProjectFromDropDown = new Select(driver.findElement(By.name("project")));
+        selectProjectFromDropDown.selectByVisibleText("H1");
+        Thread.sleep(2000);
+
+        WebElement selectProjectBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectProjectBtn.click();
+        Thread.sleep(1000);
+
+        WebElement viewAggregateReport = driver.findElement(By.xpath("//*[contains(text(),'View Aggregated')]"));
+        viewAggregateReport.click();
+        Thread.sleep(2000);
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+
+        WebElement graph = driver.findElement(By.id("MyBarChart"));
+        if(graph.isDisplayed()) {
+            System.out.println("Assertion : Graph is displayed to the User");
+        }
+        else {
+            System.out.println("Assertion : Graph is not displayed to the User");
+        }
+
+        Thread.sleep(1000);
+        driver.close();
+
+    }           // User should see the graph if there are some records
+
+
+    @Test
+    public void aggregateDbReport5() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : Aggregate Db Report");
+        System.out.println("Test Description : User after selecting client and project , and getting into View Aggregate Reports, should see all the details");
+        System.out.println("Expected Result : User should see (Overall Complexity, Project Name, No of Databases, Estimated timeline and total size of databases");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        Select selectClientFromDropDown = new Select(driver.findElement(By.xpath("//select[@name='client']")));
+        selectClientFromDropDown.selectByVisibleText("Hanzala");
+        Thread.sleep(1000);
+
+        WebElement selectClientBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectClientBtn.click();
+        Thread.sleep(1000);
+
+        Select selectProjectFromDropDown = new Select(driver.findElement(By.name("project")));
+        selectProjectFromDropDown.selectByVisibleText("H1");
+        Thread.sleep(2000);
+
+        WebElement selectProjectBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectProjectBtn.click();
+        Thread.sleep(1000);
+
+        WebElement viewAggregateReport = driver.findElement(By.xpath("//*[contains(text(),'View Aggregated')]"));
+        viewAggregateReport.click();
+        Thread.sleep(2000);
+
+        WebElement clientName = driver.findElement(By.xpath("//div[@class='row'][1]/div[@class='col'][1]/h5"));
+        String getClientName = clientName.getText();
+        WebElement overallComplexity = driver.findElement(By.xpath("//div[@class='row'][2]/div[@class='col'][1]/h5"));
+        String getOverallComplexity = overallComplexity.getText();
+        WebElement estimatedTimeline = driver.findElement(By.xpath("//div[@class='row'][2]/div[@class='col'][2]/h5"));
+        String getestimatedTimeline = estimatedTimeline.getText();
+        WebElement projectName = driver.findElement(By.xpath("//div[@class='row'][3]/div[@class='col'][1]/h5"));
+        String getprojectName = projectName.getText();
+        WebElement numberOfDatabases = driver.findElement(By.xpath("//div[@class='row'][3]/div[@class='col'][2]/h5"));
+        String getnumberOfDatabases = numberOfDatabases.getText();
+        WebElement totalSizeOfDatabase = driver.findElement(By.xpath("//div[@class='row'][3]/div[@class='col'][3]/h5"));
+        String gettotalSizeOfDatabase = totalSizeOfDatabase.getText();
+
+        System.out.println("Client Name : "+getClientName);
+        System.out.println("OverAll Complexity : "+getOverallComplexity);
+        System.out.println("Estimated Timeline : "+getestimatedTimeline);
+        System.out.println("Project Name : "+getprojectName);
+        System.out.println("Number of Databases : "+getnumberOfDatabases);
+        System.out.println("Total Size of Databases : "+gettotalSizeOfDatabase);
+
+
+        Thread.sleep(1000);
+        driver.close();
+
+    }           // User should see (complexity,projectName,no Of Db,estimated time and total size) inside Aggregate View
+
+
+    @Test
+    public void aggregateDbReport6() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : Aggregate Db Report");
+        System.out.println("Test Description : User after selecting client and project and Aggregate view,can download the pdf");
+        System.out.println("Expected Result : After clicking on PDF , it should be downloaded");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        Select selectClientFromDropDown = new Select(driver.findElement(By.xpath("//select[@name='client']")));
+        selectClientFromDropDown.selectByVisibleText("Hanzala");
+        Thread.sleep(1000);
+
+        WebElement selectClientBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectClientBtn.click();
+        Thread.sleep(1000);
+
+        Select selectProjectFromDropDown = new Select(driver.findElement(By.name("project")));
+        selectProjectFromDropDown.selectByVisibleText("H1");
+        Thread.sleep(2000);
+
+        WebElement selectProjectBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectProjectBtn.click();
+        Thread.sleep(1000);
+
+        WebElement viewAggregateReport = driver.findElement(By.xpath("//*[contains(text(),'View Aggregated')]"));
+        viewAggregateReport.click();
+        Thread.sleep(2000);
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+
+        WebElement downloadPdf = driver.findElement(By.id("printPDF"));
+        downloadPdf.click();
+
+
 
         Thread.sleep(2000);
         driver.close();
 
-    }           // Admin should be able to delete other users record
+    }           // User clicks on Pdf and it should be downloaded
 
 
+    @Test
+    public void aggregateDbReport7() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : Aggregate Db Report");
+        System.out.println("Test Description : User after selecting client and project and Aggregate view,can download the pdf");
+        System.out.println("Expected Result : After clicking on PDF , it should be downloaded");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        Select selectClientFromDropDown = new Select(driver.findElement(By.xpath("//select[@name='client']")));
+        selectClientFromDropDown.selectByVisibleText("Monty");
+        Thread.sleep(1000);
+
+        WebElement selectClientBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectClientBtn.click();
+        Thread.sleep(1000);
+
+        Select selectProjectFromDropDown = new Select(driver.findElement(By.name("project")));
+        selectProjectFromDropDown.selectByVisibleText("Hussain2");
+        Thread.sleep(2000);
+
+        WebElement selectProjectBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectProjectBtn.click();
+        Thread.sleep(1000);
+
+        WebElement viewAggregateReport = driver.findElement(By.xpath("//*[contains(text(),'View Aggregated')]"));
+        viewAggregateReport.click();
+        Thread.sleep(2000);
+
+        WebElement numberOfDatabases = driver.findElement(By.xpath("//div[@class='row'][3]/div[@class='col'][2]/h5"));
+        String getnumberOfDatabases = numberOfDatabases.getText();
+        System.out.println("1 :"+getnumberOfDatabases);
+
+        WebElement backBtn = driver.findElement(By.id("Add_Project_Back"));
+        backBtn.click();
+        Thread.sleep(1000);
+
+        List<WebElement> databasesList = driver.findElements(By.id("tblDelete"));
+        databasesList.get(0).click();           // deleting first database item
+        Thread.sleep(2000);
+        driver.findElement(By.linkText("Yes")).click();
+
+        WebElement viewAggregateReport1 = driver.findElement(By.xpath("//*[contains(text(),'View Aggregated')]"));
+        viewAggregateReport1.click();
+        Thread.sleep(2000);
+
+        WebElement numberOfDatabases1 = driver.findElement(By.xpath("//div[@class='row'][3]/div[@class='col'][2]/h5"));
+        String getnumberOfDatabases1 = numberOfDatabases1.getText();
+        System.out.println("2 :"+getnumberOfDatabases1);
+
+        if(getnumberOfDatabases.equals(getnumberOfDatabases1)) {
+            System.out.println("Counts before and after delete are same, Before Delete DB : "+getnumberOfDatabases+ " and After Delete DB : "+getnumberOfDatabases1);
+        }
+        else {
+            System.out.println("Counts before and after delete are different, Before Delete DB : " +getnumberOfDatabases+ " and After Delete DB :" +getnumberOfDatabases1);
+        }
+
+        Thread.sleep(2000);
+        driver.close();
+
+    }           // Delete 1 database from the project screen and verify no of Databases from View Aggregate Report
+
+
+    // --------------------------------- DB Connection Cases -------------------------------- //
+
+
+    @Test
+    public void dbConnection1() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : DB Connection");
+        System.out.println("Test Description : User after selecting client and project can see the project name.");
+        System.out.println("Expected Result : User can see the project name after get into Project Screen ");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        Select selectClientFromDropDown = new Select(driver.findElement(By.xpath("//select[@name='client']")));
+        selectClientFromDropDown.selectByVisibleText("Hanzala");
+        Thread.sleep(1000);
+
+        WebElement selectClientBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectClientBtn.click();
+        Thread.sleep(1000);
+
+        Select selectProjectFromDropDown = new Select(driver.findElement(By.name("project")));
+        selectProjectFromDropDown.selectByVisibleText("H1");
+        Thread.sleep(2000);
+
+
+        WebElement selectProjectBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectProjectBtn.click();
+        Thread.sleep(1000);
+
+        WebElement projectNameOnHomeScreen = driver.findElement(By.xpath("//h5"));
+        String a = projectNameOnHomeScreen.getText();
+
+        String[] projectNameFromHomPage = a.split(" ");
+        String projectNameFromHomePage = projectNameFromHomPage[3];
+
+        if(projectNameFromHomePage == "") {
+            System.out.println("Project name is null");
+        }
+        else {
+            System.out.println("Project Name : " + projectNameFromHomePage);
+        }
+
+        Thread.sleep(1000);
+        driver.close();
+
+    }               // Admin can see Project name on Home Screen
+
+
+    @Test
+    public void dbConnection2() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : DB Connection");
+        System.out.println("Test Description : User after selecting client and project can see the all the details ");
+        System.out.println("Expected Result : When the admin get into Home screen then (User Managment,Switch Project, DB Extraction Info,Logout and View Aggregate Report) buttons should be viewable to him");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        Select selectClientFromDropDown = new Select(driver.findElement(By.xpath("//select[@name='client']")));
+        selectClientFromDropDown.selectByVisibleText("Hanzala");
+        Thread.sleep(1000);
+
+        WebElement selectClientBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectClientBtn.click();
+        Thread.sleep(1000);
+
+        Select selectProjectFromDropDown = new Select(driver.findElement(By.name("project")));
+        selectProjectFromDropDown.selectByVisibleText("H1");
+        Thread.sleep(2000);
+
+
+        WebElement selectProjectBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectProjectBtn.click();
+        Thread.sleep(1000);
+
+        WebElement userManagementText = driver.findElement(By.xpath("//*[contains(text(),'User Managment')]"));
+        if (userManagementText.isDisplayed()) {                       // asserting if User Management btn is displaying or not
+            System.out.println("- User Managment Button is displayed");
+        } else {
+            System.out.println("- User Managment Button is not displayed");
+        }
+
+        WebElement switchProject = driver.findElement(By.xpath("//*[contains(text(),'Switch Project')]"));
+        if (switchProject.isDisplayed()) {                       // asserting if Swtich Project btn is displaying or not
+            System.out.println("- Switch Project Button is displayed");
+        } else {
+            System.out.println("- Switch Project Button is not displayed");
+        }
+
+        WebElement extractionDBInfo = driver.findElement(By.xpath("//input[@value='Extract Database Information']"));
+        if (extractionDBInfo.isDisplayed()) {                       // asserting if Extraction DB Info btn is displaying or not
+            System.out.println("- Extraction DB Info Button is displayed");
+        } else {
+            System.out.println("- Extraction DB Info Button is not displayed");
+        }
+
+        WebElement viewAggregateReport = driver.findElement(By.xpath("//*[contains(text(),'View Aggregate')]"));
+        if (viewAggregateReport.isDisplayed()) {                       // asserting if View Aggregate Report btn is displaying or not
+            System.out.println("- View Aggregate Report Button is displayed");
+        } else {
+            System.out.println("- View Aggregate Report Button is not displayed");
+        }
+
+        WebElement logout = driver.findElement(By.xpath("//*[contains(text(),'Logout')]"));
+        if (logout.isDisplayed()) {                        // asserting if Logout btn is displaying or not
+            System.out.println("- Logout Button is displayed");
+        } else {
+            System.out.println("- Logout Button is not displayed");
+        }
+
+        Thread.sleep(1000);
+        driver.close();
+
+    }               // Admin can see (User Managment, Switch Project, Extract DB Info, Logout and View Aggregate Report) buttons
+
+
+    @Test
+    public void dbConnection3() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : DB Connection");
+        System.out.println("Test Description : Creator after selecting project can not see User Managment button");
+        System.out.println("Expected Result : When the creator get into Home screen then User Managment button should not be viewable to him");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("creator");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        WebElement selectProjectBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectProjectBtn.click();
+
+        WebElement switchProject = driver.findElement(By.xpath("//*[contains(text(),'Switch Project')]"));
+        if (switchProject.isDisplayed()) {                       // asserting if Swtich Project btn is displaying or not
+            System.out.println("- Switch Project Button is displayed");
+        } else {
+            System.out.println("- Switch Project Button is not displayed");
+        }
+
+        WebElement extractionDBInfo = driver.findElement(By.xpath("//input[@value='Extract Database Information']"));
+        if (extractionDBInfo.isDisplayed()) {                       // asserting if Extraction DB Info btn is displaying or not
+            System.out.println("- Extraction DB Info Button is displayed");
+        } else {
+            System.out.println("- Extraction DB Info Button is not displayed");
+        }
+
+        WebElement viewAggregateReport = driver.findElement(By.xpath("//*[contains(text(),'View Aggregate')]"));
+        if (viewAggregateReport.isDisplayed()) {                       // asserting if View Aggregate Report btn is displaying or not
+            System.out.println("- View Aggregate Report Button is displayed");
+        } else {
+            System.out.println("- View Aggregate Report Button is not displayed");
+        }
+
+        WebElement logout = driver.findElement(By.xpath("//*[contains(text(),'Logout')]"));
+        if (logout.isDisplayed()) {                        // asserting if Logout btn is displaying or not
+            System.out.println("- Logout Button is displayed");
+        } else {
+            System.out.println("- Logout Button is not displayed");
+        }
+
+        Thread.sleep(1000);
+        driver.close();
+
+    }               // Creator can not see User Managment on Home screen
+
+
+    @Test
+    public void dbConnection4() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : DB Connection");
+        System.out.println("Test Description : Viewer after selecting project can not see User Managment button");
+        System.out.println("Expected Result : When the viewer get into Home screen then User Managment button should not be viewable to him");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("viewer");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        WebElement selectProjectBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectProjectBtn.click();
+
+        WebElement switchProject = driver.findElement(By.xpath("//*[contains(text(),'Switch Project')]"));
+        if (switchProject.isDisplayed()) {                       // asserting if Swtich Project btn is displaying or not
+            System.out.println("- Switch Project Button is displayed");
+        } else {
+            System.out.println("- Switch Project Button is not displayed");
+        }
+
+        WebElement extractionDBInfo = driver.findElement(By.xpath("//input[@value='Extract Database Information']"));
+        if (!extractionDBInfo.isEnabled()) {                       // asserting if Extraction DB Info btn is disabled or not
+            System.out.println("- Extraction DB Info Button is disabled");
+        } else {
+            System.out.println("- Extraction DB Info Button is enabled");
+        }
+
+        WebElement viewAggregateReport = driver.findElement(By.xpath("//*[contains(text(),'View Aggregate')]"));
+        if (viewAggregateReport.isDisplayed()) {                       // asserting if View Aggregate Report btn is displaying or not
+            System.out.println("- View Aggregate Report Button is displayed");
+        } else {
+            System.out.println("- View Aggregate Report Button is not displayed");
+        }
+
+        WebElement logout = driver.findElement(By.xpath("//*[contains(text(),'Logout')]"));
+        if (logout.isDisplayed()) {                        // asserting if Logout btn is displaying or not
+            System.out.println("- Logout Button is displayed");
+        } else {
+            System.out.println("- Logout Button is not displayed");
+        }
+
+        Thread.sleep(1000);
+        driver.close();
+
+    }               // Viewer can not see User Managment on Home screen
+
+
+    @Test
+    public void dbConnection5() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : DB Connection");
+        System.out.println("Test Description : Viewer after selecting project can not click Extraction DB Info and Re-upload buttons as they are disabled");
+        System.out.println("Expected Result : When the viewer at home screen clicks Extraction DB Info and Re-upload buttons, they should not be clicked and should be disabled");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("viewer");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        WebElement selectProjectBtn = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectProjectBtn.click();
+
+
+        WebElement extractionDBInfo = driver.findElement(By.xpath("//input[@value='Extract Database Information']"));
+        if (!extractionDBInfo.isEnabled()) {                       // asserting if Extraction DB Info btn is disabled or not
+            System.out.println("- Extraction DB Info Button is disabled");
+        } else {
+            System.out.println("- Extraction DB Info Button is enabled");
+        }
+
+       WebElement reUpload = driver.findElement(By.xpath("//input[@value='Re-Upload']"));
+        if(!reUpload.isEnabled()){
+            System.out.println("- Re-upload button is disabled");
+        }
+        else {
+            System.out.println("- Re-upload button is enabled");
+        }
+
+        Thread.sleep(1000);
+        driver.close();
+
+    }               // Extraction DB Info and Re-upload buttons should be disabled for Viewer
 
 
 
 
 }
+
 
 
