@@ -1,11 +1,22 @@
+package Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import io.netty.util.internal.ThreadExecutorMap;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.UUID;
+import java.util.concurrent.TimeUnit;
+
 
 public class dbasTestCases extends InterruptedException {
 
@@ -15,19 +26,22 @@ public class dbasTestCases extends InterruptedException {
     @Test
     public void loginTestCase1() throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
 
+        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://starm-assessment-dev.mlogica.com");
         driver.manage().window().maximize();
+
         Thread.sleep(2000);
+
         WebElement userName = driver.findElement(By.id("username"));
-        userName.sendKeys("ankur1234");
-        Thread.sleep(2000);
+        userName.sendKeys("administrator");
+       // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
-        Thread.sleep(2000);
         WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
         signInBtn.click();
         Thread.sleep(2000);
@@ -42,7 +56,6 @@ public class dbasTestCases extends InterruptedException {
         } else {
             System.out.println("Login failed");
         }
-
         driver.close();
 
     }           // Click Sign in btn with valid Admin details
@@ -50,8 +63,8 @@ public class dbasTestCases extends InterruptedException {
     @Test
     public void loginTestCase2() throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
 
+        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://starm-assessment-dev.mlogica.com");
@@ -85,8 +98,9 @@ public class dbasTestCases extends InterruptedException {
     @Test
     public void loginTestCase3() throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
 
+        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://starm-assessment-dev.mlogica.com");
@@ -204,16 +218,16 @@ public class dbasTestCases extends InterruptedException {
 
         WebDriver driver = new ChromeDriver();
 
+
         driver.get("https://starm-assessment-dev.mlogica.com");
         driver.manage().window().maximize();
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("password");
         Thread.sleep(2000);
-
-        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(2));
+        WebElement signInBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//b[contains(text(),'Sign')]")));
         signInBtn.click();
-        Thread.sleep(2000);
 
         System.out.println("Test Scenario : Login Functionality");
         System.out.println("Test Description : Insert username but no password");
@@ -2561,6 +2575,354 @@ public class dbasTestCases extends InterruptedException {
         driver.close();
 
     }               // Extraction DB Info and Re-upload buttons should be disabled for Viewer
+
+
+
+    // --------------------------------- CLient List Cases -------------------------------- //
+
+    @Test
+    public void clientList1() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : Client List");
+        System.out.println("Test Description : Check if the no of clients are same as in client dropdown on the dashboard");
+        System.out.println("Expected Result : The no. of clients should be equal to the no in Select Client dropdown");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        List<WebElement> clientDropDown = driver.findElements(By.xpath("//select[@name='client']/option"));
+        int countOfClientsFromDropDownClients = clientDropDown.size();
+
+        WebElement clientList = driver.findElement(By.xpath("//div/a[contains(text(),'Client List')]"));
+        clientList.click();
+        Thread.sleep(2000);
+
+        List<WebElement> clientFromClientlist = driver.findElements(By.xpath("//tbody/tr[@style='font-weight:100;']"));
+        int countOfClientFromClientList = clientFromClientlist.size();
+
+        Assert.assertEquals(countOfClientsFromDropDownClients,countOfClientFromClientList,"Assertion - Count of Clients are not same, Count from Dropdown : "+countOfClientsFromDropDownClients+ " and Count from Client List : " +countOfClientFromClientList);
+        System.out.println("Assertion - Count of Clients are same, Count from Dropdown : "+countOfClientsFromDropDownClients+ " and Count from Client List : " +countOfClientFromClientList);
+
+
+
+
+
+
+        Thread.sleep(1000);
+        driver.close();
+
+    }               // Counts of Clients from dropdown and Client list should be equal
+
+
+    @Test
+    public void clientList2() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : Client List");
+        System.out.println("Test Description : When User clicks on Logout button from the  Client List screen, he should get logout");
+        System.out.println("Expected Result : User should get logout once he click on Logout button from Client List screen.");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        WebElement clientList = driver.findElement(By.xpath("//div/a[contains(text(),'Client List')]"));
+        clientList.click();
+        Thread.sleep(2000);
+
+        WebElement logoutBtn = driver.findElement(By.xpath("//*[contains(text(),'Logout')]"));
+        logoutBtn.click();
+        Thread.sleep(1000);
+
+
+
+
+
+
+
+
+        Thread.sleep(1000);
+        driver.close();
+
+    }              // After clicking logout button from the Client List screen, user should get logged out
+
+
+
+
+    @Test
+    public void clientList3() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : Client List");
+        System.out.println("Test Description : When User clicks on Back button from the Client list screen,then he should get back to the select client screen.");
+        System.out.println("Expected Result : User should redirect to the select client screen once he clicks on Back button from Client List screen.");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        WebElement clientList = driver.findElement(By.xpath("//div/a[contains(text(),'Client List')]"));
+        clientList.click();
+        Thread.sleep(2000);
+
+        WebElement backBtn = driver.findElement(By.xpath("//*[contains(text(),'Back')]"));
+        backBtn.click();
+        Thread.sleep(1000);
+
+
+
+
+
+
+
+
+        Thread.sleep(1000);
+        driver.close();
+
+    }              // After clicking back button from the Client List screen, user should be redirected to Select Client Screen
+
+
+    @Test
+    public void clientList4() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : Client List");
+        System.out.println("Test Description : When user edit any client's name, it should get updated");
+        System.out.println("Expected Result : The client's name should get updated on Client list and also on select client dropdown");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        WebElement clientList = driver.findElement(By.xpath("//div/a[contains(text(),'Client List')]"));
+        clientList.click();
+        Thread.sleep(2000);
+
+        List<WebElement> editClient = driver.findElements(By.xpath("//tr[@style='font-weight:100;']/td/a[contains(text(),'Edit')]"));
+        editClient.get(0).click();              // clicking edit button of first client
+        Thread.sleep(2000);
+
+        int min = 0 , max = 1000;
+        int randomNum = (int) (Math.random() * (max - min + 1) + min);
+
+
+      //  WebElement enterClientName = driver.findElement(By.id("c_name-98"));
+        Actions act = new Actions(driver);
+
+        WebElement enterClientName = driver.findElement(By.id("c_name-98"));
+        act.doubleClick(enterClientName).perform();
+        enterClientName.sendKeys(Keys.CLEAR);
+        enterClientName.sendKeys("client"+randomNum);
+        Thread.sleep(1000);
+
+        WebElement updateClient = driver.findElement(By.id("add_client-98"));
+        updateClient.click();
+        Thread.sleep(1000);
+        driver.close();
+
+    }           // Edit client from Client List page and update Client's name
+
+
+    @Test
+    public void clientList5() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : Client List");
+        System.out.println("Test Description : When user delete any client it should not get deleted if it's used in Project/Users");
+        System.out.println("Expected Result : The client should not get deleted if it is used in any Project.");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        WebElement clientList = driver.findElement(By.xpath("//div/a[contains(text(),'Client List')]"));
+        clientList.click();
+        Thread.sleep(2000);
+
+        List<WebElement> deleteClient = driver.findElements(By.xpath("//tr[@style='font-weight:100;']/td/a[contains(text(),'Delete')]"));
+        deleteClient.get(0).click();              // clicking delete button of first client
+        Thread.sleep(2000);
+
+        driver.findElement(By.linkText("Yes")).click();
+
+
+
+
+        Thread.sleep(1000);
+        driver.close();
+
+    }           // The client should not get deleted if it is used in any Project.
+
+
+    @Test
+    public void clientList6() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : Client List");
+        System.out.println("Test Description : When user delete any client and if the client is not associated with any project then it should get deleted");
+        System.out.println("Expected Result : TThe client should get deleted successfully.");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        WebElement clientList = driver.findElement(By.xpath("//div/a[contains(text(),'Client List')]"));
+        clientList.click();
+        Thread.sleep(2000);
+
+        List<WebElement> deleteClient = driver.findElements(By.xpath("//tr[@style='font-weight:100;']/td/a[contains(text(),'Delete')]"));
+        deleteClient.get(0).click();              // clicking delete button of first client
+        Thread.sleep(2000);
+
+        driver.findElement(By.linkText("Yes")).click();
+
+
+
+
+        Thread.sleep(1000);
+        driver.close();
+
+    }           // The client should get deleted if client is not associated with any project.
+
+
+
+            // --------------------------------- Project List Cases -------------------------------- //
+
+
+    @Test
+    public void projectList1() throws InterruptedException {
+
+        System.setProperty("webdriver.chrome.driver", "D:\\Maven Project\\chromedriver.exe");
+
+        WebDriver driver = new ChromeDriver();
+
+        System.out.println("Test Scenario : Project List");
+        System.out.println("Test Description : Check if the no of projects are same as in project dropdown on the dashboard");
+        System.out.println("Expected Result : The no of projects should be equal to the no in Select Project dropdown");
+        System.out.println("\n");
+
+        driver.get("https://starm-assessment-dev.mlogica.com");
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        WebElement userName = driver.findElement(By.id("username"));
+        userName.sendKeys("ankur1234");
+        Thread.sleep(1000);
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("password");
+        Thread.sleep(1000);
+        WebElement signInBtn = driver.findElement(By.xpath("//b[contains(text(),'Sign')]"));
+        signInBtn.click();
+        Thread.sleep(2000);
+
+        WebElement selectClient = driver.findElement(By.xpath("//button[@type='submit']"));
+        selectClient.click();
+        Thread.sleep(1000);
+
+        List<WebElement> projectDropDown = driver.findElements(By.xpath("//select[@name='project']/option"));
+        int countOfProjectsFromDropDownProjects = projectDropDown.size();
+
+        WebElement projectList = driver.findElement(By.xpath("//div/a[contains(text(),'Project List')]"));
+        projectList.click();
+        Thread.sleep(2000);
+
+        List<WebElement> projectFromProjectList = driver.findElements(By.xpath("//tbody/tr[@style='font-weight:100;']"));
+        int countOfProjectsFromProjectList = projectFromProjectList.size();
+
+        Assert.assertEquals(countOfProjectsFromProjectList,countOfProjectsFromDropDownProjects,"Assertion - Count of Projects are not same, Count from Dropdown : "+countOfProjectsFromDropDownProjects+ " and Count from Client List : " +countOfProjectsFromProjectList);
+        System.out.println("Assertion - Count of Projects are same, Count from Dropdown : "+countOfProjectsFromDropDownProjects+ " and Count from Project List : " +countOfProjectsFromProjectList);
+
+        Thread.sleep(1000);
+        driver.close();
+
+    }               // Counts of Project from dropdown and Project list should be equal
+
+
+
 
 
 

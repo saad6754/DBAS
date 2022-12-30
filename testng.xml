@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/saad.ahmed/IdeaProjects/DBAS">
         <classes>
-            <class name="dbasTestCases"/>
+            <class name="Test.dbasTestCases"/>
         </classes>
     </test>
 </suite>
